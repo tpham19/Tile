@@ -1,7 +1,14 @@
 #include <iostream>;
 using namespace std;
 
-double tilingCost(int width, int height, double tileCost);
+/**
+ * Calculates the total cost it would take to cover a tile
+ * floor plan of width and height, using a cost entered by the user.
+ */
+
+double tilingCost(int width, int height, double tileCost) {
+	return width * height * tileCost;
+};
 
 int main() {
 	int width, height;
@@ -15,6 +22,3 @@ int main() {
 	return 0;
 };
 
-double tilingCost(int width, int height, double tileCost) {
-	return width * height * tileCost;
-};
